@@ -1,30 +1,19 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
-| Assignment # |                            |
+| Name         | JINGYI TSAI                |
+| Date         | 03/14/2024                 |
+| Course       | Spring                     |
+| Assignment # | 4                          |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
+A software system developed to facilitate the integration of the two systems, an outdated legacy system and a newly developed system, owned by a company for accessing customer data.
 
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/jytsai85/cs-665-assignment-4
 
-# Implementation Description 
-
-
-For each assignment, please answer the following:
-
-- Explain the level of flexibility in your implementation, including how new object types can
-be easily added or removed in the future.
-- Discuss the simplicity and understandability of your implementation, ensuring that it is
-easy for others to read and maintain.
-- Describe how you have avoided duplicated code and why it is important.
-- If applicable, mention any design patterns you have used and explain why they were
-chosen.
-
+# Implementation Description
+The adapter pattern used in this program meets the requirement to access to customer data store in the old system through the new system interface. The inheritance between the parent Customer class and the children customer classes help to reduce redundancy of code when accessing the customers' information. The code is fairly simple with only two system interfaces, each associates with an API for storing customer data, a adapter, and low coupling between each other. That is, the program is highly maintainable and flexible, if attempt to access to another APIs with different interfaces.
 
 # Maven Commands
 

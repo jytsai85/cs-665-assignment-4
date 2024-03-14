@@ -6,22 +6,23 @@
  * Description: The adapter that facilitates the integration
  * of the old and new system interfaces.
  */
+
 package edu.bu.met.cs665.adapt.system;
 
-public class UsbToHttpsAdapter implements CustomerData_HTTPS {
-    private final CustomerData_USB usbAccess;
+public class UsbToHttpsAdapter implements CustomerData_Https {
+  private final CustomerData_Usb usbAccess;
 
-    public UsbToHttpsAdapter(CustomerData_USB usbAccess) {
-        this.usbAccess = usbAccess;
-    }
+  public UsbToHttpsAdapter(CustomerData_Usb usbAccess) {
+    this.usbAccess = usbAccess;
+  }
 
-    @Override
-    public void printCustomer(int customerId) {
-        usbAccess.printCustomer(customerId);
-    }
+  @Override
+  public void printCustomer(int customerId) {
+    usbAccess.printCustomer(customerId);
+  }
 
-    @Override
-    public void getCustomer_HTTPS(int customerId) {
-        usbAccess.getCustomer_USB(customerId);
-    }
+  @Override
+  public void getCustomer_Https(int customerId) {
+    usbAccess.getCustomer_Usb(customerId);
+  }
 }
